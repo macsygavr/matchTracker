@@ -38,7 +38,7 @@ const CommandDefaultIcon = () => (
         y2="48.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#CF1C51" />
+        <stop stopColor="#CF1C51" />
         <stop offset="1" stopColor="#AF1947" />
       </linearGradient>
       <linearGradient
@@ -49,7 +49,7 @@ const CommandDefaultIcon = () => (
         y2="44.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FEE3A2" />
+        <stop stopColor="#FEE3A2" />
         <stop offset="1" stopColor="#F2A768" />
       </linearGradient>
       <linearGradient
@@ -60,7 +60,7 @@ const CommandDefaultIcon = () => (
         y2="32.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FEE3A2" />
+        <stop stopColor="#FEE3A2" />
         <stop offset="1" stopColor="#F2A768" />
       </linearGradient>
       <linearGradient
@@ -71,7 +71,7 @@ const CommandDefaultIcon = () => (
         y2="28.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FEE3A2" />
+        <stop stopColor="#FEE3A2" />
         <stop offset="1" stopColor="#F2A768" />
       </linearGradient>
     </defs>

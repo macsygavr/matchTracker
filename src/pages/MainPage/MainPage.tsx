@@ -2,15 +2,22 @@ import Header from "@/src/components/Header/Header";
 import React from "react";
 import css from "./index.module.css";
 import MatchItem from "@/src/components/MatchItem/MatchItem";
-import { MatchStatus } from "@/src/components/MatchItem/components/StatusTag/StatusTag";
+import { useQuery } from "@tanstack/react-query";
+import { getMatchList } from "@/src/api/matchInfoApi";
 
 const MainPage = () => {
+  const { data } = useQuery({
+    queryKey: ["matchList"],
+    queryFn: getMatchList,
+  });
+
   return (
     <div>
       <Header />
       <div className={css.listContainer}>
-        <MatchItem score={"2 : 1"} status={MatchStatus.LIVE} />
-        <MatchItem score={"3 : 2"} status={MatchStatus.FINISHED} />
+        {data?.data?.matches?.map((item) => (
+          <MatchItem key={item.title} match={item} />
+        ))}
       </div>
     </div>
   );

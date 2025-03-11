@@ -1,11 +1,8 @@
 import React, { FC } from "react";
 import css from "./index.module.css";
 import cn from "classnames";
-
-export enum MatchStatus {
-  LIVE = "Live",
-  FINISHED = "Finished",
-}
+import { MatchStatus } from "@/src/api/matchInfoApi";
+import { getStatusName } from "./helpers";
 
 type Props = {
   status: MatchStatus;
@@ -16,11 +13,12 @@ const StatusTag: FC<Props> = ({ status }) => {
     <div
       className={cn(
         css.container,
-        status === MatchStatus.LIVE && css.green,
-        status === MatchStatus.FINISHED && css.red
+        status === MatchStatus.Ongoing && css.green,
+        status === MatchStatus.Scheduled && css.orange,
+        status === MatchStatus.Finished && css.red
       )}
     >
-      {status}
+      {getStatusName(status)}
     </div>
   );
 };
