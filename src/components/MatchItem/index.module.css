@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background-color: #0b0e12;
+  border-radius: 4px;
+}
+
+.container * {
+  background-color: #0b0e12;
+}
+
+.commandInfoContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.commandName {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.matchScore {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+}

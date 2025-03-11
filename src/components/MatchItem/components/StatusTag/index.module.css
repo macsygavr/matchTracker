@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 4px;
+  width: 92px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.green {
+  background-color: #43ad28;
+}
+
+.red {
+  background-color: #eb0237;
+}
